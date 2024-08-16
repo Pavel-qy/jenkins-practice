@@ -1,11 +1,8 @@
 def call() {
-    pipeline {
-        agent any
-        stages {
-            stage('build') {
-                steps {
-                    sh 'python3 --version'
-                }
+    node{
+        stage('SIL Test'){
+            steps {
+                sh 'python3 --version'
             }
         }
     }
