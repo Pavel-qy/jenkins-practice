@@ -1,9 +1,11 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'python3 --version'
+def call() {
+    pipeline {
+        agent any
+        stages {
+            stage('build') {
+                steps {
+                    sh 'python3 --version'
+                }
             }
         }
     }
