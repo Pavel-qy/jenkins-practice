@@ -1,5 +1,4 @@
 node {
-    def rootDir = pwd()
-    def pipelineScript = load "${rootDir}@script/pipeline.groovy"
+    def pipelineScript = load "/code/jenkins-practice/pipeline.groovy"
     pipelineScript.call()
 }
