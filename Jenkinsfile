@@ -1,15 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Initialize') {
+        stage('build') {
             steps {
-                script {
-                    // Load the external Groovy script
-                    def pipelineScript = load 'pipeline.groovy'
-                    
-                    // Call methods from the loaded script
-                    pipelineScript()
-                }
+                sh 'python3 --version'
             }
         }
     }
