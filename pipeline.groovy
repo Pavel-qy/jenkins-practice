@@ -1,9 +1,3 @@
 def call() {
-    node{
-        stage('SIL Test'){
-            steps {
-                sh 'python3 --version'
-            }
-        }
-    }
+    sh 'python3.11 --version'
 }
