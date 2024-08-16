@@ -1,4 +1,4 @@
-def command = "python3.11 test_case.py"
+def command = "python3.11 /code/jenkins-practice/test_case.py"
 def maxRetries = 3
 def retryCount = 0
 def success = false
