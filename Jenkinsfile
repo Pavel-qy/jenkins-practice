@@ -1,5 +1,6 @@
 node {
     checkout scm 
-    def pipelineScript = load "/code/jenkins-practice/pipeline.groovy"
+    sh 'ls -la'
+    def pipelineScript = load "pipeline.groovy"
     pipelineScript.call()
 }
