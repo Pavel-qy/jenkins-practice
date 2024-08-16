@@ -8,7 +8,7 @@ pipeline {
                     def pipelineScript = load 'pipeline.groovy'
                     
                     // Call methods from the loaded script
-                    pipelineScript.call()
+                    pipelineScript()
                 }
             }
         }
