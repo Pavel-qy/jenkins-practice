@@ -1,10 +1,2 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'python3 --version'
-            }
-        }
-    }
-}
+def pipelineScript = load 'pipeline.groovy'
+pipelineScript()
